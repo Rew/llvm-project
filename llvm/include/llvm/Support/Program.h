@@ -32,6 +32,8 @@ namespace sys {
   const char EnvPathSeparator = ':';
 #elif defined (_WIN32)
   const char EnvPathSeparator = ';';
+#else
+  const char EnvPathSeparator = '|';
 #endif
 
 #if defined(_WIN32)

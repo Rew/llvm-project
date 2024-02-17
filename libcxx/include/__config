@@ -913,10 +913,10 @@ typedef __char32_t char32_t;
 #    define _LIBCPP_HAS_TRIVIAL_CONDVAR_DESTRUCTION
 #  endif
 
-#  if defined(__BIONIC__) || defined(__NuttX__) || defined(__Fuchsia__) || defined(__wasi__) ||                        \
-      defined(_LIBCPP_HAS_MUSL_LIBC) || defined(__OpenBSD__)
+//#  if defined(__BIONIC__) || defined(__NuttX__) || defined(__Fuchsia__) || defined(__wasi__) ||                        \
+//      defined(_LIBCPP_HAS_MUSL_LIBC) || defined(__OpenBSD__)
 #    define _LIBCPP_PROVIDES_DEFAULT_RUNE_TABLE
-#  endif
+//#  endif
 
 #  if __has_feature(cxx_atomic) || __has_extension(c_atomic) || __has_keyword(_Atomic)
 #    define _LIBCPP_HAS_C_ATOMIC_IMP

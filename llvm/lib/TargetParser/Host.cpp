@@ -26,8 +26,7 @@
 #ifdef LLVM_ON_UNIX
 #include "Unix/Host.inc"
 #include <sched.h>
-#endif
-#ifdef _WIN32
+#else
 #include "Windows/Host.inc"
 #endif
 #ifdef _MSC_VER
